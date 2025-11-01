@@ -1,6 +1,16 @@
 namespace MisProductos;
 public class PresupuestoDetalle{
-    public Producto Producto{get;set;}
+    private Producto _producto;
+    private int _cantidad;
+    public Producto Producto
+    {
+        get { return _producto; }
+        set{ _producto = value; }
+    }
 
-    public int Cantidad {get;set;}
+    public int Cantidad
+    {
+        get { return _cantidad; }
+        set{ _cantidad = value; }
+    }
 }
